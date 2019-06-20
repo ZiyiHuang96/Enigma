@@ -1,0 +1,608 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+div.body {
+    background-color: #97a2a2;
+    padding: 1em 0.5em;
+}
+
+h1 {
+    font-size: 1.5em;
+    color: white;
+    font-style: italic;
+}
+
+h2 {
+    font-size: 1.2em;
+    border-bottom: thin solid black;
+}
+
+
+/*
+ * General purpose
+ */
+.center {
+    text-align: center;
+}
+
+/*
+ * Forms
+ */
+
+form p a{
+    text-align: center;
+    color: white;
+}
+
+form.dialog {
+    background-image: url('images/texture.png');
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0.5em 0;
+    border: 1pt solid black;
+}
+
+div.dialog_receipients {
+    background-image: url('images/texture.png');
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0.5em 0;
+    border: 1pt solid black;
+}
+
+div.body_receiver{
+    background-image: url('images/texture.png');
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0.5em 0;
+    border: 1pt solid black;
+}
+
+div.dialog {
+    background-image: url('images/texture.png');
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0.5em 0;
+    border: 1pt solid black;
+    margin-top: 1em;
+}
+
+
+
+table.recipient button{
+    margin-left: 26em;
+    width: 100px;
+}
+
+div.dialog_receipients p {
+    margin: 1em 0;
+    text-align: center;
+}
+
+div.dialog p {
+    margin: 1em 0;
+    text-align: center;
+}
+
+div.encoder{
+    text-align: center;
+}
+
+div.messages table{
+    margin: 0 auto;
+}
+
+
+form.newgame{
+    background-image: url('images/texture.png');
+    width: 23%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0.5em 0;
+    border: 1pt solid black;
+    text-align: center;
+
+}
+
+form.dialog p {
+    margin: 1em 0;
+    text-align: center;
+}
+
+form.dialog p.name {
+    text-align: left;
+}
+
+form.dialog p.password{
+    text-align: left;
+}
+
+input.initial {
+    width: 1.5em;
+    text-align: center;
+}
+
+input[type="submit"], input[type="button"] {
+    width: 7em;
+}
+
+div.controls {
+    width: 18em;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+
+div.controls input, div.controls select, div.controls button {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+div.controls p {
+    width: 100%;
+    margin: 1em auto;
+}
+
+button {
+    width: 12em;
+}
+
+div.encoder textarea {
+    width: 45%;
+    height: 5em;
+}
+
+/*
+ * Headers and footers
+ */
+header, footer {
+    background-color: #18453b;
+    padding: 0.25em 0.5em 0 0.5em;
+    margin: 0;
+}
+
+header img, footer img {
+    width: 100%;
+    height: auto;
+    max-width: 800px;
+}
+
+header figure {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Navigation
+ */
+nav {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    text-align: left;
+    width: 5em;
+    font-size: 1.25em;
+    padding: 0.35em 0 0.35em 0.25em;
+}
+
+nav ul li:hover {
+    background-color: #444444;
+}
+
+nav ul li:hover a {
+    color: white;
+}
+
+nav a {
+    color: #888888;
+    text-decoration: none;
+}
+
+li.selected a {
+    color: white;
+}
+
+/*
+ * Enigma dispaly
+ */
+div.enigma {
+    width: 800px;
+    margin: 1em auto;
+    position: relative;
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 800px) {
+    div.enigma {
+        width: 600px;
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    div.enigma {
+        width: 400px;
+        font-size: 9px;
+    }
+}
+
+div.enigma figure {
+    margin: 0;
+}
+
+div.enigma img {
+    width: 100%;
+    height: auto;
+    z-index: -1000;
+}
+
+
+/*
+ * Wheels
+ */
+
+p.wheel {
+    color: black;
+    width: 2.5%;
+    position: absolute;
+    top: 25.5%;
+    text-align: center;
+    margin: 0;
+    z-index: 100;
+}
+
+
+p.wheel-s {
+    top: 53.5%;
+}
+
+p.wheel-1 {
+    left: 28%;
+}
+
+p.wheel-2 {
+    left: 38.5%;
+}
+
+p.wheel-3 {
+    left: 49%;
+}
+
+/*
+ * Keys
+ */
+
+div.key {
+    position: absolute;
+    width: 7%;
+    height: auto;
+    z-index: 100;
+}
+
+div.key button {
+    position: absolute;
+    left: 0;
+    top: 15%;
+    width: 100%;
+
+    background: transparent;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 1.75em;
+    color: inherit;
+    z-index: 200;
+}
+
+
+div.key span {
+
+}
+
+div.pressed span {
+    color: red;
+}
+
+/* First row */
+
+div.key-q {
+    left: 11.5%;
+    top: 63.5%;
+}
+
+div.key-w {
+    left: calc(11.5% + 9.0625%);
+    top: 63.5%;
+}
+
+div.key-e {
+    left: calc(11.5% + 2 * 9.0625%);
+    top: 63.5%;
+}
+
+div.key-r {
+    left: calc(11.5% + 3 * 9.0625%);
+    top: 63.5%;
+}
+
+div.key-t {
+    left: calc(11.5% + 4 * 9.0625%);
+    top: 63.5%;
+}
+
+div.key-z {
+    left: calc(11.5% + 5 * 9.0625%);
+    top: 63.5%;
+}
+
+div.key-u {
+    left: calc(11.5% + 6 * 9.0625%);
+    top: 63.5%;
+}
+
+div.key-i {
+    left: calc(11.5% + 7 * 9.0625%);
+    top: 63.5%;
+}
+
+div.key-o {
+    left: calc(11.5% + 8 * 9.0625%); // 84%;
+    top: 63.5%;
+}
+
+/* Second row */
+
+div.key-a {
+    left: 15%;
+    top: 70%;
+}
+
+div.key-s {
+    left: calc(15% + 1 * 9.0625%); // 84%;
+    top: 70%;
+}
+
+div.key-d {
+    left: calc(15% + 2 * 9.0625%); // 84%;
+    top: 70%;
+}
+div.key-f {
+    left: calc(15% + 3 * 9.0625%); // 84%;
+    top: 70%;
+}
+div.key-g {
+    left: calc(15% + 4 * 9.0625%); // 84%;
+    top: 70%;
+}
+div.key-h {
+    left: calc(15% + 5 * 9.0625%); // 84%;
+    top: 70%;
+}
+div.key-j {
+    left: calc(15% + 6 * 9.0625%); // 84%;
+    top: 70%;
+}
+div.key-k {
+    left: calc(15% + 7 * 9.0625%); // 84%;
+    top: 70%;
+}
+
+/* Third row */
+
+div.key-p {
+    left: 9.5%;
+    top: 77%;
+}
+
+div.key-y {
+    left: calc(9.5% + 9.0625%);
+    top: 77%;
+}
+
+div.key-x {
+    left: calc(9.5% + 2 * 9.0625%);
+    top: 77%;
+}
+
+div.key-c {
+    left: calc(9.5% + 3 * 9.0625%);
+    top: 77%;
+}
+
+div.key-v {
+    left: calc(9.5% + 4 * 9.0625%);
+    top: 77%;
+}
+
+div.key-b {
+    left: calc(9.5% + 5 * 9.0625%);
+    top: 77%;
+}
+
+div.key-n {
+    left: calc(9.5% + 6 * 9.0625%);
+    top: 77%;
+}
+
+div.key-m {
+    left: calc(9.5% + 7 * 9.0625%);
+    top: 77%;
+}
+
+div.key-l {
+    left: calc(9.5% + 8 * 9.0625%); // 84%;
+    top: 77%;
+}
+
+/*
+ * Lights
+ */
+
+div.light {
+    position: absolute;
+    width: 7%;
+    height: auto;
+    font-size: 1.6em;
+    color: #787878;
+    z-index: 100;
+}
+
+div.light-on {
+    color: white;
+}
+
+div.light-q {
+    left: 13.0%;
+    top: 42%;
+}
+
+div.light-w {
+    left: 22.5%;
+    top: 42%;
+}
+
+div.light-e {
+    left: 31.5%;
+    top: 42%;
+}
+
+div.light-r {
+    left: 41%;
+    top: 42%;
+}
+
+div.light-t {
+    left: 50%;
+    top: 42%;
+}
+
+div.light-z {
+    left: 59%;
+    top: 42%;
+}
+
+div.light-u {
+    left: 68.5%;
+    top: 42%;
+}
+
+div.light-i {
+    left: 77.5%;
+    top: 42%;
+}
+
+div.light-o {
+    left: 86.5%;
+    top: 42%;
+}
+
+div.light-a {
+    left: 16.2%;
+    top: 49%;
+}
+
+div.light-s {
+    left: 25%;
+    top: 49%;
+}
+
+div.light-d {
+    left: 35%;
+    top: 49%;
+}
+
+div.light-f {
+    left: 44%;
+    top: 49%;
+}
+
+div.light-g {
+    left: 53%;
+    top: 49%;
+}
+
+div.light-h {
+    left: 62%;
+    top: 49%;
+}
+
+div.light-j {
+    left: 71.5%;
+    top: 49%;
+}
+
+div.light-k {
+    left: 80.7%;
+    top: 49%;
+}
+
+div.light-p {
+    left: 10%;
+    top: 55.7%;
+}
+
+div.light-y {
+    left: 19%;
+    top: 55.7%;
+}
+
+div.light-x {
+    left: 28.5%;
+    top: 55.7%;
+}
+
+div.light-c {
+    left: 38%;
+    top: 55.7%;
+}
+
+div.light-v {
+    left: 47%;
+    top: 55.7%;
+}
+
+div.light-b {
+    left: 56%;
+    top: 55.7%;
+}
+
+div.light-n {
+    left: 65.5%;
+    top: 55.7%;
+}
+
+div.light-m {
+    left: 74.5%;
+    top: 55.7%;
+}
+
+div.light-l {
+    left: 83.8%;
+    top: 55.7%;
+}
+
+
+
+
+

@@ -1,0 +1,84 @@
+/** @file
+ * @brief Style sheet for test results 
+ * @author Charles B. Owen
+ * @version 1.00 12-07-2014 Declared version number
+ * @cond
+ */
+ 
+@charset "utf-8";
+
+h1, h2 {
+	font-family: "Arial", Arial, sans-serif;
+}
+
+nav {
+	float: right;
+}
+
+nav a:link {
+	color: white;
+}
+
+nav a:visited {
+	color: #bbbbbb;
+}
+
+h1 {
+	padding: 0;
+	margin: 0;
+	background-color: #18453B;
+	color: white;
+}
+
+a {
+	text-decoration:underline;
+}
+
+a.clearresults {
+	font-size: 10pt;
+	font-weight:100;
+	color:red;
+	font-style:italic;
+}
+
+p.success {
+	color:green;
+}
+
+h2 {
+	color: blue;
+	text-align: center;
+	border-bottom: thin solid black;
+	font-size: 1.4em;
+	font-weight:100;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+p.complete {
+	color: blue;
+	text-align: center;
+	border-top: thin solid black;
+}
+
+ul li {
+	list-style-type: disc;
+	list-style-image: none;
+}
+
+ul.tests {
+/*  columns: 3;
+  -webkit-columns: 3;
+  -moz-columns: 3; */
+}
+
+span.verbose {
+	font-size: 10pt;
+	font-weight:100;
+	color:red;
+	font-style:italic;
+}
+
+/** 
+ * @endcond
+ */
